@@ -7,7 +7,7 @@ class palindrom:
 
     def checkPalindrom(self):
         temp_string=self.a.lower()
-        reverse_string="".join(sorted(temp_string,reverse=True))
+        reverse_string=temp_string[::-1]
         if temp_string==reverse_string:
             return True
         else:
